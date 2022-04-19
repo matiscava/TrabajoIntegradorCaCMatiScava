@@ -1,0 +1,157 @@
+body
+{
+  height: 100%;
+}
+
+.navbar-dark .navbar-nav .nav-link--green
+{
+  color: green;
+}
+
+.navbar
+{
+  background-color: #172028
+}
+.navbar-brand
+{
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+}
+.imgLogo
+{
+  width: 20%;
+}
+#portada
+{
+  height: 70vh;
+  overflow:hidden;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.card
+{
+  border-radius: 0;
+}
+.card-img-overlay
+{
+  background-color: rgba(0, 0, 0, 0.274);
+}
+.card-img-overlay.row
+{
+  --bs-gutter-x: 0  
+}
+.col-4 .card-title,.col-4 .card-text
+{
+  text-align: right;
+}
+.btn-success-light
+{
+  margin-left: 10px;
+  background-color: #3fb73f;
+}
+.btn-success-light:hover
+{
+  background-color: #467e46;
+}
+.floatRight
+{
+  float: right;
+}
+#contenedorOradores
+{
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+p.lead, h2 
+{
+  text-align: center;
+  margin: 0;
+}
+
+.tarjeta
+{
+  background-color: #122433;
+  display: flex;
+  padding: 0;
+  height: 500px;
+  width: 100%;
+}
+.imgContainer
+{
+  width: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#tarjetaImg
+{
+  max-width: 100%;
+}
+.textContainer
+{
+  width: 50%;
+  padding: 20px;
+}
+.textContainer h2
+{
+  text-align: left;
+}
+
+#inputCharla
+{
+  width: 100%;
+  height: 100px;
+}
+#btnForm{
+  width: 100%;
+  background-color: #3d923d;
+  border-color: #3d923d;
+}
+#btnForm:hover{
+  width: 100%;
+  color: lightslategray;
+  background-color: #355c35;
+  border-color: #355c35;
+}
+#textAreaInfo{
+  color: gray;  
+  margin: 0;
+}
+#formText{
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+footer{
+  margin-top: 20px;
+  width: 100%;
+  background: rgb(55,55,59);
+  background: linear-gradient(90deg, rgba(55,55,59,1) 2%, rgba(9,9,121,1) 58%, rgba(134,172,180,1) 100%);
+}
+
+.footerUl{
+  display: flex;
+  margin: auto;
+  /* align-content: center;*/
+  justify-content:space-around; 
+  padding: 20px;
+}
+.footerLi{
+  list-style: none;
+  color: white;
+  text-decoration: none;
+
+}
+.footerA{
+  text-decoration: none;
+  color: white;
+  width: 40px;
+  text-align: center;
+  transition: 0.5s;
+}
+.footerA:hover{
+  color: rgb(160, 147, 147);
+}
