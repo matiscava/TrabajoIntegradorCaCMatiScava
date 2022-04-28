@@ -88,7 +88,9 @@ p.lead, h2
 }
 #tarjetaImg
 {
-  max-width: 100%;
+  height: inherit;
+  object-fit: cover;
+  object-position: 50% 50%;;
 }
 .textContainer
 {
