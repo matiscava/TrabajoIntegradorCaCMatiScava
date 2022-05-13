@@ -112,6 +112,53 @@
       </div>
     </form>
   </div>
+  <div id="comprar-tickets">
+    <div class="card-container">
+      <div class="card-category">
+        <h3>Estudiante</h3>
+        <p>Tienen un descuento</p>
+        <p><b>80%</b></p>
+        <p>* presentar documentación</p>
+      </div>
+      <div class="card-category">
+        <h3></h3>
+        <p>Trainee</p>
+        <p><b>50%</b></p>
+        <p>* presentar documentación</p>
+      </div>
+      <div class="card-category">
+        <h3>Junior</h3>
+        <p>Tienen un descuento</p>
+        <p><b>15%</b></p>
+        <p>* presentar documentación</p>
+      </div>
+    </div>
+    <p class="lead">VENTA</p>
+    <h2>VALOR DE TICKET $200</h2>
+    <form id="form-venta" type="submit">
+      <input type="text" class="input-form" name="name" pattern="^[a-zA-ZÑñÁÉÍÓÚáéíóúüÜ\s]+$" title="El nombre solo acepta letras y espacios en blanco"   placeholder="Nombre" required>
+      <input type="text" class="input-form" name="lastname" pattern="^[a-zA-ZÑñÁÉÍÓÚáéíóúüÜ\s]+$" title="El apellido solo acepta letras y espacios en blanco" placeholder="Apellido" required>
+      <input type="text" class="input-form" name="email" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" title="Email incorrecto" placeholder="Correo" required>
+      <label for="quantity">Cantidad
+        <input type="text" class="input-form" id="inp-qunatity" name="quantity" title="La cantidad solo acepta Números" pattern="^[0-9]+$" placeholder="Cantidad" required>
+      </label>
+      <label for="category">Categoría
+        <select class="select-form" name="category" id="category">
+          <option value="estudiante">Estudiante</option>
+          <option value="trainee">Trainee</option>
+          <option value="junior">Junior</option>
+        </select>
+      </label>
+
+      <div id="total">
+        <p>Total a Pagar: $</p>
+      </div>
+      <div class="form-container">
+        <input type="button" class="btn btn-form" id="btn-delete" value="Borrar">
+        <input type="submit" class="btn btn-form" value="Resumen">
+      </div>
+    </form>
+  </div>
   <footer>
     <div class="container">
       <ul class="footerUl">
@@ -125,5 +172,6 @@
       </ul>
     </div>
   </footer>
+  <script src="index.js"></script>
 </body>
 </html>

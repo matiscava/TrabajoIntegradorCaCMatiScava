@@ -1,6 +1,16 @@
+html{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*,
+*:before,
+*:after{
+  box-sizing: inherit;
+}
+
 body
 {
-  height: 100%;
+  min-height: 100vh;
 }
 
 .navbar-dark .navbar-nav .nav-link--green
@@ -88,7 +98,9 @@ p.lead, h2
 }
 #tarjetaImg
 {
-  max-width: 100%;
+  min-height: 100%;
+  width: auto;
+
 }
 .textContainer
 {
@@ -154,4 +166,126 @@ footer{
 }
 .footerA:hover{
   color: rgb(160, 147, 147);
+}
+
+/* TARJETAS VENTA */
+
+#comprar-tickets {
+  width: 80%;
+  max-width: 1200px;
+  padding-top: 50px;
+  margin: 0 auto;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card-category {
+  border: 1px solid rgb(51, 167, 235);
+  padding: 4rem;
+  /* width: 30%; */
+  text-align: center;
+}
+.card-category:nth-child(2) {
+  border-color: rgb(29, 165, 29);
+}
+.card-category:nth-child(3) {
+  border-color: rgb(231, 154, 54);
+}
+
+.card-category p {
+  font-size: 150%;
+}
+
+.card-category p:nth-child(4){
+  font-size: 100%;
+  color: rgb(179, 168, 168);
+}
+#form-venta{
+  margin-top: 20px;
+}
+#form-venta label {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.input-form,
+.select-form  {
+  width: 100%;
+  display: block;
+  margin-bottom: 5px;
+}
+
+select {
+  padding: 1px 2px;
+}
+
+#total {
+  background-color: lightskyblue;
+  border: thick solid rgb(111, 185, 231);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  color: rgb(39 57 147);
+}
+
+#total p {
+  margin: 0;
+}
+
+.btn-form {
+  display: inline-block;
+  width: 50%;
+  padding: 5px;
+  background-color: #3fb73f  ;
+  color: white;
+  border-color: #51b451;
+}
+.btn-form:hover {
+  opacity: .8;
+  color: white;
+}
+
+#form-venta [required]:valid {
+  border: thin solid #4caf50;
+}
+
+#form-venta [required]:invalid {
+  border: thin solid #f44336;
+}
+
+.contact-form-error {
+  margin-top: -.5rem;
+  font-size: 80%;
+  background-color: #f44336;
+  color: #fff;
+  transition: all 800 ease;
+}
+.contact-form-error.is-active {
+  display: block;
+  animation: show-message 1s 1 normal 0s ease-out both;
+}
+.none{
+  display: none;
+}
+
+
+@keyframes show-message {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100%{
+    visibility: visible;
+    opacity: 1;
+  }
 }
